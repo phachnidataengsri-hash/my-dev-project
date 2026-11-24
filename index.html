@@ -1,21 +1,70 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav>
-        <div class="logo">
-            <a href="#">MySite</a>
-        </div>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+        <div class="logo">MyProfile.</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="welcome">WELCOME TO MY WEBSITE ✨</p>
+            <h1>สวัสดี! ฉันชื่อ<br>
+                <span>พัชนิดา</span>
+            </h1>
+            <h2>นักเรียนสาขาเทคโนโลยีสารสนเทศ</h2>
+            <p>ยินดีต้อนรับเข้าสู่เว็บไซต์แนะนำตัวของฉัน
+                เว็บไซต์ที่รวบรวมประวัติ ความสามารถ
+                และสิ่งที่ฉันสนใจ
+            </p>
+            <a href="#about" class="btn">รู้จักฉันเพิ่มเติม →</a>
+        </div>
+
+        <div class="hero-image">
+           <img src="profile.jpg" alt="รูปโปรไฟล์">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>ABOUT ME 💜</h2>
+        <p>ชื่อ : พัชนิดา แตงศรี</p>
+        <p>ชื่อเล่น : ตาต้า</p>
+        <p>กำลังศึกษา : ระดับ ปวช.2/2</p>
+        <p>สาขา : เทคโนโลยีสารสนเทศ</p>
+        <p>งานอดิเรก : ฟังเพลง และออกแบบเว็บไซต์</p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>MY SKILLS 💻</h2>
+        <div class="skill-list">
+            <div class="skill">HTML 🌐</div>
+            <div class="skill">CSS 🎨</div>
+            <div class="skill">JavaScript ⚡</div>
+            <div class="skill">Computer 💻</div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>CONTACT ME 📩</h2>
+        <p>ขอบคุณที่เข้ามาเยี่ยมชมเว็บไซต์ของฉัน</p>
+    </section>
+
+    <footer>
+        © 2026 My Portfolio | Created by Patchanida 💜
+    </footer>
+
 </body>
 </html>
