@@ -8,144 +8,163 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f8f5ff;
-    color: #333;
+    background: #fffaf3;
+    color: #493323;
 }
 
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 22px 8%;
-    background: white;
+    background: #493323;
+    color: white;
 }
 
-.logo {
+nav h2 {
     font-size: 25px;
-    font-weight: bold;
-    color: #8b5cf6;
 }
 
-.menu, nav ul {
+nav ul {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: #444;
-    font-weight: bold;
 }
 
 nav a:hover {
-    color: #8b5cf6;
+    color: #e9bc83;
 }
 
+/* Hero */
 .hero {
-    min-height: 520px;
-    padding: 70px 10%;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 60px 10%;
+    background: #f3e3ce;
     gap: 40px;
-    background: linear-gradient(120deg, #ede9fe, #e0f2fe);
 }
 
-.hero-text {
-    max-width: 550px;
+.content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #493323;
 }
 
-.welcome {
-    color: #8b5cf6;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-}
-
-.hero h1 span {
-    color: #8b5cf6;
-}
-
-.hero h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.hero-text p {
+.content p {
     line-height: 1.8;
+    margin-bottom: 25px;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 25px;
-    padding: 13px 25px;
-    background: #8b5cf6;
+    background: #754c24;
     color: white;
-    text-decoration: none;
+    padding: 13px 25px;
     border-radius: 30px;
+    text-decoration: none;
 }
 
 .btn:hover {
-    background: #6d28d9;
+    background: #a16c36;
 }
 
-.hero-image img {
-    width: 300px;
-    height: 300px;
+.coffee-image img {
+    width: 350px;
+    height: 350px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 8px solid white;
-    box-shadow: 0 10px 30px #aaa;
+    border-radius: 25px;
 }
 
-.about, .skills, .contact {
-    padding: 65px 10%;
+/* About */
+.about {
     text-align: center;
+    padding: 70px 10%;
 }
 
-.about h2, .skills h2, .contact h2 {
-    color: #8b5cf6;
+.about h2,
+.menu h2,
+.contact h2 {
     font-size: 30px;
+    color: #754c24;
     margin-bottom: 25px;
 }
 
 .about p {
-    margin: 12px;
-    font-size: 17px;
-}
-
-.skill-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.skill {
-    background: white;
-    padding: 25px 40px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px #ddd;
-    font-weight: bold;
-}
-
-.contact {
-    background: #ede9fe;
     line-height: 2;
 }
 
-footer {
+/* Menu */
+.menu {
+    padding: 70px 8%;
     text-align: center;
-    background: #29213b;
+    background: #f8eee1;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    width: 270px;
+    padding: 15px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #d9c8b5;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    color: #a16c36;
+    font-size: 22px;
+}
+
+/* Contact */
+.contact {
+    padding: 65px 10%;
+    text-align: center;
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    background: #493323;
     color: white;
+    text-align: center;
     padding: 20px;
 }
 
+/* Responsive */
 @media (max-width: 700px) {
     nav {
         flex-direction: column;
@@ -154,19 +173,22 @@ footer {
 
     nav ul {
         gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
     }
 
-    .hero h1 {
-        font-size: 36px;
+    .content h1 {
+        font-size: 32px;
     }
 
-    .hero-image img {
-        width: 220px;
-        height: 220px;
+    .coffee-image img {
+        width: 100%;
+        max-width: 350px;
+        height: 280px;
     }
 }
